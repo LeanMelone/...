@@ -1,0 +1,308 @@
+body {
+    font-family: Segoe UI, Arial, sans-serif;
+    margin: 0;
+    background: #1e1e1e;
+    color: #ddd;
+    padding-top: 64px;
+}
+
+main {
+    max-width: 80%;
+    margin: 1.2rem auto;
+    padding: 0 1rem
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #b4b4b4;
+    text-align: left;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #d3d3d3;
+    text-align: left;
+    margin: 0;
+}
+
+/* Header */
+.site-header {
+    background: #181818;
+    border-bottom: 1px solid #aaaaaa;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+/* Footer */
+.site-footer {
+    background: #3c3c3c;
+    border-top: 1px solid #bbc;
+    color: #bbb;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+.site-footer .container {
+    display: block;
+    text-align: center;
+    height: 950px;
+}
+
+/* Header */
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+}
+
+.brand {
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.active {
+    border: 2px solid #343434;
+}
+
+.nav {
+    display: flex;
+    gap: 1rem
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 0.6rem;
+    align-items: center
+}
+
+.nav a {
+    display: inline-block;
+    padding: 0.5rem 0.6rem;
+    color: #d7d7d7;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    background: #343434
+}
+
+
+.nav-toggle-checkbox {
+    position: absolute;
+    left: -9999px;
+}
+
+.nav-toggle {
+    display: none;
+    background: transparent;
+    padding: 0.4rem 0.6rem;
+    border-radius: 6px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #bbc;
+    margin: 0;
+}
+
+/* Linie */
+.lineb {
+    width: 80%;
+    height: 2px;
+    background-color: #222;
+    margin: 40px auto;
+    border-radius: 2px;
+}
+
+.linew {
+    width: 80%;
+    height: 2px;
+    background-color: #959595;
+    margin: 40px auto;
+    border-radius: 2px;
+}
+
+/* Icons */
+#yt-button,
+#insta-button {
+    color: #ddd;
+    font-size: 35px;
+    margin: 0 12px;
+}
+
+#yt-button:hover,
+#insta-button:hover {
+    color: #797979;
+    font-size: 35px;
+    margin: 0 12px;
+}
+
+/* Fotos */
+.bandbig {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1.2rem;
+}
+
+.bandsmall {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1.2rem;
+    display: none;
+}
+
+.bild-container {
+    position: relative;
+    display: flex;
+}
+
+.social-icons {
+    position: absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    z-index: 3;
+}
+
+/* Kontaktformular */
+form {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #222;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+    margin-bottom: 1.2rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.4rem;
+    margin-top: 1rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+input,
+textarea {
+    width: 95%;
+    padding: 0.6rem;
+    border: 1px solid #444;
+    border-radius: 6px;
+    background: #333;
+    color: #fff;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #888;
+    outline: none;
+}
+
+.button {
+    padding: 0.7rem 1.5rem;
+    background: #3c3c3c;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.button:hover {
+    background: #555;
+}
+
+/* Abstand */
+.abstand {
+    margin-bottom: 20px;
+}
+
+/* Mobile style */
+@media (max-width:768px) {
+    main {
+        max-width: 90%;
+    }
+
+    /* Header */
+    .container {
+        max-width: 90%;
+        flex-direction: row;
+        gap: 0.6rem;
+        padding: 0 1rem
+    }
+
+    .nav {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 64px;
+        background: #252525;
+        border-bottom: 1px solid #e6e6e6;
+        padding: 0.5rem 1rem;
+        display: none;
+        flex-direction: column
+    }
+
+    .nav ul {
+        flex-direction: column;
+        gap: 0.2rem
+    }
+
+    .nav a {
+        padding: 0.6rem;
+        border-radius: 4px
+    }
+
+    .nav-toggle {
+        display: inline-block;
+        align-self: center;
+        margin: 0;
+    }
+
+    #nav-toggle:checked~.nav {
+        display: flex
+    }
+
+    /* Fotos */
+    .bandbig {
+        display: none;
+    }
+
+    .bandsmall {
+        display: block;
+    }
+}
